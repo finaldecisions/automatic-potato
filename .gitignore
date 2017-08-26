@@ -1,33 +1,45 @@
-# http://www.gnu.org/software/automake
-
-Makefile.in
-/ar-lib
-/mdate-sh
-/py-compile
-/test-driver
-/ylwrap
-
-# http://www.gnu.org/software/autoconf
-
-/autom4te.cache
-/autoscan.log
-/autoscan-*.log
-/aclocal.m4
-/compile
-/config.guess
-/config.h.in
-/config.sub
-/configure
-/configure.scan
-/depcomp
-/install-sh
-/missing
-/stamp-h1
-
-# https://www.gnu.org/software/libtool/
-
-/ltmain.sh
-
-# http://www.gnu.org/software/texinfo
-
-/texinfo.tex
+# All files to globally ignore
+*.pyc
+*.pyo
+*$py.class
+# vim trash:
+.*.sw[a-z]
+*.patch
+*.orig
+*.rej
+*#
+*~
+MANIFEST
+_trial_temp*
+dist
+build/
+.build
+*.egg-info
+master/docs/buildbot.html
+master/docs/buildbot.info
+master/docs/buildbot.info-1
+master/docs/buildbot.info-2
+.stgit-edit.txt
+.project
+.pydevproject
+.settings
+*/build/
+master/docs/buildbot
+master/docs/version.texinfo
+master/docs/docs.tgz
+master/docs/latest
+twisted/plugins/dropin.cache
+.coverage
+coverage-html
+master/docs/tutorial/_build
+_build
+# tox
+.tox/
+# downloaded by setup_requires eggs
+*.egg
+.eggs/
+master/setuptools_trial*
+master/buildbot/www/static/js/default/
+sandbox
+.idea/
+/.venv/
